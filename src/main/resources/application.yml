@@ -18,3 +18,11 @@ spring:
     username: admin
     password: ${LEO_MYSQL_PASS}
 
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        orm:
+          jdbc:
+            bind: TRACE
