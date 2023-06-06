@@ -23,7 +23,7 @@ public class Comment {
     @Column(name = "id", updatable = false)
     private Long id;
 
-    @Column(name = "content", nullable = false)
+    @Column(name = "content", columnDefinition = "TINYTEXT", nullable = false)
     private String content;
 
     @JsonBackReference
